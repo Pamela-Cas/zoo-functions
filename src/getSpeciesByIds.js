@@ -1,7 +1,7 @@
 const data = require('../data/zoo_data');
 
-function getSpeciesByIds(...currs) {
-  const arrSpecies = currs.map((curr) => data.species.find((specie) => specie.id === curr));
+function getSpeciesByIds(...ids) { // ...inclui em um array
+  const arrSpecies = ids.map((id) => data.species.find((specie) => specie.id === id));
   return arrSpecies;
 }
 
