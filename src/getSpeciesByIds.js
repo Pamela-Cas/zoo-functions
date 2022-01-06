@@ -5,5 +5,5 @@ function getSpeciesByIds(ids) {
 }
 
 module.exports = getSpeciesByIds;
-const vamosComTudo = "BoraTryber"
+const vamosComTudo = ['BoraTryber', 'VamosComTudo']
 console.log(vamosComTudo)
