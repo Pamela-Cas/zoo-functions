@@ -6,5 +6,4 @@ function getOldestFromFirstSpecies(id) {
     .residents.sort((a, b) => b.age - a.age)[0]);
 }
 module.exports = getOldestFromFirstSpecies;
-console.log(getOldestFromFirstSpecies());
 // sort utlizado para organizar por idade e retornar o mais velho

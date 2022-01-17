@@ -3,9 +3,7 @@ const { species } = require('../data/zoo_data');
 
 const getAnimalsForLocation = () => {
   const animalsLocation = {
-    NE: species
-      .filter((specie) => specie.location === 'NE')
-      .map((animal) => animal.name),
+    NE: species.filter((specie) => specie.location === 'NE').map((animal) => animal.name),
     NW: species
       .filter((specie) => specie.location === 'NW')
       .map((animal) => animal.name),
