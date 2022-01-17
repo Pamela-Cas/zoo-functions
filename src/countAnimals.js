@@ -8,9 +8,11 @@ function countAnimals(animal) {
   }
 
   const animalToCount = species.find((spec) => spec.name === animal.specie); // Objeto chave specie
-  if (!animal.sex) {
+  if (!animal.sex) { // se não houver a opção 'sex'
     return animalToCount.residents.length; // retorna a quantidade de animais daquela espécie;
   }
   return animalToCount.residents.filter((spec) => spec.sex === animal.sex).length; // chave specie e sex / a quantidade de animais daquela espécie, no sexo
 }
 module.exports = countAnimals;
+
+// Realizado durante com auxílio monitoria;
